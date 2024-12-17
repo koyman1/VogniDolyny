@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Вогні Долини</title>
+        <link rel="stylesheet" href="css/style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <div class="header">
+                <div class="container">
+                    <div class="header_line">
+                        <div class="header_logo">
+                            <a href="index.html"><img src="img/header_logo.png"></a>
+                        </div>
+
+                        <div class="header_menu">
+                            <ul>
+                                <a class="nav_item" href="#">Головна</a>
+                                <a class="nav_item" href="#">Меню</a>
+                                <a class="nav_item" href="#">Про нас</a>
+                                <div class="header_phone_burger">
+                                    <a href="#">+38 066 600 59-99</a>
+                                    <p>Зателефонуйте нам для<br>бронювання!</p>
+                                </div>
+                                
+                                <div class="header_order_burger">
+                                    <a href="#"><button>Замовити столик</button></a>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="header_phone">
+                            <a href="#">+38 066 600 59-99</a>
+                            <p>Зателефонуйте нам для<br>бронювання!</p>
+                        </div>
+                        
+                        <div class="header_order">
+                            <a href="#"><button>Замовити столик</button></a>
+                        </div>
+
+                        <div class="burger_menu">
+                            <span></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="header_content">
+                    <h1>Вітаємо в нашому ресторані!</h1><br>
+                    <h2>Вогні Долини</h2>
+
+                    <p><img src="img/geo.png"> м.Долина вулиця Обліски, 34а</p>
+                    <p><img src="img/time.png"> 11:00 - 23:00</p>
+                    <a href="#"><img src="img/phone.png"> +38 066 600 59-99</a><br>
+
+                    <a href=""><button>Переглянути меню</button></a>
+                    <a href=""><button>Замовити банкет</button></a>
+
+                    <div class="social_media">
+                        <a href=""><img src="img/inst.png"></a>
+                        <a href=""><img src="img/facebook.png"></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    <script>
+        document.querySelector('.burger_menu').addEventListener('click', function()  {
+            this.classList.toggle('active');
+            document.querySelector('.header_menu').classList.toggle('open');
+        });
+    </script>
+    </body>
+</html>
